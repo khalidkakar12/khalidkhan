@@ -1,0 +1,179 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;400;500;600;700;800;900&display=swap'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .border-gradient-blue-indigo {
+      border-image: linear-gradient(to right, #69ade6, #0c25b6);
+      border-image-slice: 1;
+    }
+  }
+.myExperiencePara{
+  @apply w-[86%] m-auto  text-sm md:text-lg text-[#c4bebe]
+}
+.headings{
+  @apply text-2xl md:text-4xl ml-[7%] mt-3 md:mt-5 text-white  font-bold
+}
+.glassmorphism {
+    @apply bg-opacity-10 bg-blue-500 backdrop-blur-md;
+}
+.InputGlassmorphism {
+  @apply bg-opacity-30 bg-blue-600 backdrop-blur-md;
+}
+.bgresponsive {
+    @apply bg-cover bg-center h-screen;
+}
+.gradientButton{
+    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+}
+html{
+  scroll-behavior: smooth;
+scroll-padding: 1.5rem;
+}
+html::-webkit-scrollbar {
+  width: 7px;
+}
+html::-webkit-scrollbar-track {
+  background-color: #100581;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #5965d5;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px); /* Adjust the distance as needed */
+  }
+}
+
+.element {
+  animation: move 2s infinite alternate; 
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(48, 40, 135, 0.5);
+}
+.card:hover {
+  transform: translateY(20px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+.card .info h1 {
+  margin: 2px 0px;
+}
+.card .info p {
+  letter-spacing: 0.3px;
+  font-size: 15px;
+  margin: 3px 0px;
+}
+.card .info Link {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info Link:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+
+#parent-circle {
+  position: absolute;
+  z-index: -3;
+  top: 0px;
+  left: 10vw;
+  width: 80vw;
+  height: 80vw;
+  margin: auto;
+  border: 0.3vw solid rgba(13, 25, 235, 0.8);
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: transform 0.7s linear;
+  animation: rotate 7s infinite linear;
+}
+
+#parent-circle .circle {
+  display: block;
+  position: absolute;
+  width: 2.5%;
+  height: 2.5%;
+  margin: -30%;
+  border-radius: 50%;
+  top: 90%;
+  left: 90%;
+}
+
+#parent-circle .circle.teal {
+  background-color: rgb(13, 25, 235, 1);
+  transform: rotate(288deg) translate(44vw) rotate(-140deg);
+}
+
+#parent-circle .circle.blue {
+  background-color: rgba(13, 25, 235, 1);
+  transform: rotate(144deg) translate(40vw) rotate(-70deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
