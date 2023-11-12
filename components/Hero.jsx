@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="flex flex-col mt-[3rem] md:mt[4rem]  justify-center items-center h-[100vh]">
       <div className='border-4 border-blue-800 shadow-[0_0_50px_15px_#48abe0] p-2 rounded-full'>
-        <Image src={'/profile.jpg'} width={60} height={60} alt="profile" className="h-[15rem] w-[15rem] rounded-full" />
+        <Image src={'/profile.jpg'} width={60} height={60} alt="profile" className="h-[15rem] w-[15rem] object-contain rounded-full" />
       </div>
       <div className="texture mt-1">
         <p className={`md:text-lg text-sm  ${montserrat.className} font-light text-white text-center`}>
