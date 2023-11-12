@@ -106,7 +106,7 @@ export const projectDetails = [
         projectName: 'Inventry Shop',
         projectDetail:"Presenting my Inventory Shop Project: a cutting-edge platform where you can effortlessly manage your inventory through seamless CRUD operations. With the power of Next.js and MongoDB, this project ensures secure authentication using Next Auth.js. Experience a streamlined way to create, read, update, and delete inventory items.",
         githubLink:"https://github.com/khalidkhankakar/project_shop",
-        liveLink: "https://project-shop-o94x69c3r-khalidkhankakar.vercel.app/",
+        liveLink: "https://project-shop-gamma.vercel.app/",
         disable:false,
 
     },
