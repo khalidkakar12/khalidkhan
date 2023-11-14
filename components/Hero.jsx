@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="flex flex-col mt-[3rem] md:mt[4rem]  justify-center items-center h-[100vh]">
       <div className='border-4 border-blue-800 shadow-[0_0_50px_15px_#48abe0] p-2 rounded-full'>
-        <Image src={'https://res.cloudinary.com/dlrsia1d3/image/upload/v1699812297/profile_kwdfxg.jpg'} width={1000} height={1000} alt="profile" className="h-[17rem] w-[17rem] object-contain rounded-full" />
+        <Image src={'/profile.jpg'} width={1000} height={1000} alt="profile" className="h-[17rem] w-[17rem] object-contain rounded-full" />
       </div>
       <div className="texture mt-1">
         <p className={`md:text-lg text-sm  ${montserrat.className} font-light text-white text-center`}>
