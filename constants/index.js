@@ -67,7 +67,7 @@ export const technologies = [
     },
     {
         name: 'Tailwind CSS',
-        skillRate: 75,
+        skillRate: 80,
         img: '/tailwind.png'
     },
     {
@@ -87,8 +87,18 @@ export const technologies = [
     },
     {
         name: 'JavaScript',
-        skillRate: 83,
+        skillRate: 80,
         img: '/javascrip.png'
+    },
+        {
+        name: 'Git',
+        skillRate: 90,
+        img: '/Git.png'
+    },
+        {
+        name: 'ElectronJS',
+        skillRate: 63,
+        img: '/Electron.png'
     },
 ];
 
